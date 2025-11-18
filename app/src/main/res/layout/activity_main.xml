@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_all_rounded"
+        android:iconifiedByDefault="false"
+        android:queryHint="Type book name..." />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Favorites"
+        android:textColor="@color/white"
+        android:contentDescription="Favorites"
+        android:src="@drawable/ic_favorites"
+        app:tint="@color/white"
+        app:backgroundTint="@color/maroon"
+        app:elevation="4dp" />
+
+</RelativeLayout>
