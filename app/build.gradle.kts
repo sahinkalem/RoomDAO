@@ -45,9 +45,10 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     annotationProcessor(libs.room.compiler)
 
-   implementation ("com.google.code.gson:gson:2.10.1") // Or the latest version
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
 
+    implementation (libs.glide)
+    annotationProcessor (libs.compiler)
+    implementation (libs.okhttp3.integration)
 
     //Retrofit
     implementation(libs.retrofit)
