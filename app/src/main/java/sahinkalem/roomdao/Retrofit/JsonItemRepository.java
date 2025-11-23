@@ -12,7 +12,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import sahinkalem.roomdao.JsonModels.JsonItem;
 
-public class Repository {
+public class JsonItemRepository {
     RetrofitApiInterface retrofitApiInterface;
 
     public LiveData<List<JsonItem>> getItems(String bookname) {
